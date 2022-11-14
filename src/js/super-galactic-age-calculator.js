@@ -25,6 +25,10 @@ export default class SuperGalacticAgeCalculator {
 
   mercury() {
     const earthYearsConverted = (1/.24) * this.earthYears;
-    return `Your age on Mercury is ${parseInt(earthYearsConverted)} years old`;
+    let lifeExpectancy = "";
+    if (Object.hasOwn(this, "earthYearsToLive")) {
+      lifeExpectancy = `You have ${(1/.24) * this.earthYearsToLive} Mercury years to live.`;
+    }
+    return `You are ${parseInt(earthYearsConverted)} in Mercury years. ${lifeExpectancy}`;
   }
 }
