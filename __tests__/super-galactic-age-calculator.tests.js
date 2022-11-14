@@ -35,13 +35,8 @@ describe('SuperGalacticAgeCalculator class', () => {
   });
 
   //mercury()
-  test('4. It should return age in mercury years from earth years ', () => {
+  test('4. It should return age in mercury years and how long in Mercury years left to live', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
-    expect(ageInput.mercury()).toEqual("Your age on Mercury is 129 years old");
-  });
-
-  test('5. It should return how much life expectancy left in mercury years', () => {
-    let ageInput = new SuperGalacticAgeCalculator(31);
-    expect(ageInput.mercury()).toEqual("Your age on Mercury is 129 years old");
+    expect(ageInput.mercury()).toEqual("You are 129 in Mercury years. You have 175 years to live.");
   });
 });
