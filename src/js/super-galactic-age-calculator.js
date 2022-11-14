@@ -57,6 +57,11 @@ export default class SuperGalacticAgeCalculator {
   }
 
   jupiter() {
-    
+    const earthYearsConverted = (1/11.86) * this.earthYears;
+    let lifeExpectancy = "";
+    if (Object.hasOwn(this, "earthYearsToLive")) {
+      lifeExpectancy = `You have ${Math.round((1/11.86) * this.earthYearsToLive)} Jupiter years to live.`;
+    }
+    return `You are ${Math.round(earthYearsConverted)} in Jupiter years. ${lifeExpectancy}`;
   }
 }

@@ -77,7 +77,7 @@ describe('SuperGalacticAgeCalculator class', () => {
   test('12. It should return age in jupiter years and how long in jupiter years left to live', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
     ageInput.earthLifeExpectancy();
-    expect(ageInput.jupiter()).toEqual("You are 2 in Jupiter years. You have 3 Jupiter years to live.");
+    expect(ageInput.jupiter()).toEqual("You are 3 in Jupiter years. You have 4 Jupiter years to live.");
   });
 });
 
