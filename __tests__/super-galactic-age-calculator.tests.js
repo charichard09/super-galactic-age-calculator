@@ -79,16 +79,22 @@ describe('SuperGalacticAgeCalculator class', () => {
   });
 
   //mars()
-  test('10. It should return age in mars years and how long in mars years left to live', () => {
+  test('13. It should return age in mars years', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
     ageInput.lifeExpectancy();
-    expect(ageInput.mars()).toEqual("You are 16 in Mars years. You have 22 Mars years to live.");
+    expect(ageInput.marsAge()).toEqual("You are 16 in Mars years.");
   });
 
-  test('11. It should return mars years and if life expectancy less than age, how many mars years over', () => {
+  test('14. It should return how long in mars years left to live', () => {
+    let ageInput = new SuperGalacticAgeCalculator(31);
+    ageInput.lifeExpectancy();
+    expect(ageInput.marsLifeExpectancy()).toEqual("You have 22 Mars years to live.");
+  });
+
+  test('15. It should return if life expectancy less than age, how many mars years over', () => {
     let ageInput = new SuperGalacticAgeCalculator(74);
     ageInput.lifeExpectancy();
-    expect(ageInput.mars()).toEqual("You are 39 in Mars years. You have lived 1 years over Mars' avg life expectancy.");
+    expect(ageInput.marsLifeExpectancy()).toEqual("You have lived 1 years over Mars' avg life expectancy.");
   });
 
   //jupiter()

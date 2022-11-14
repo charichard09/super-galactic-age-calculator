@@ -19,6 +19,7 @@ export default class SuperGalacticAgeCalculator {
 
   earthLifeExpectancy() {
     let lifeExpectancy = "";
+
     if (Object.hasOwn(this, "earthYearsToLive")) {
       lifeExpectancy = `You have ${this.earthYearsToLive} Earth years to live.`;
     } else {
@@ -29,11 +30,13 @@ export default class SuperGalacticAgeCalculator {
 
   mercuryAge() {
     const earthYearsConverted = (1/.24) * this.earthYears;
+
     return `You are ${Math.round(earthYearsConverted)} in Mercury years.`;
   }
 
   mercuryLifeExpectancy() {
     let lifeExpectancy = "";
+
     if (Object.hasOwn(this, "earthYearsToLive")) {
       lifeExpectancy = `You have ${Math.round((1/.24) * this.earthYearsToLive)} Mercury years to live.`;
     } else {
@@ -43,23 +46,30 @@ export default class SuperGalacticAgeCalculator {
   }
 
   venusAge() {
+    const earthYearsConverted = (1/.62) * this.earthYears;
 
+    return `You are ${Math.round(earthYearsConverted)} in Venus years.`;
   }
 
   venusLifeExpectancy() {
-    const earthYearsConverted = (1/.62) * this.earthYears;
     let lifeExpectancy = "";
+
     if (Object.hasOwn(this, "earthYearsToLive")) {
       lifeExpectancy = `You have ${Math.round((1/.62) * this.earthYearsToLive)} Venus years to live.`;
     } else {
       lifeExpectancy = `You have lived ${Math.round((1/.62) * this.earthYearsPastYearsToLive)} years over Venus' avg life expectancy.`;
     }
-    return `You are ${Math.round(earthYearsConverted)} in Venus years. ${lifeExpectancy}`;
+    return `${lifeExpectancy}`;
   }
 
-  mars() {
+  marsAge() {
+
+  }
+
+  marsLifeExpectancy() {
     const earthYearsConverted = (1/1.88) * this.earthYears;
     let lifeExpectancy = "";
+
     if (Object.hasOwn(this, "earthYearsToLive")) {
       lifeExpectancy = `You have ${Math.round((1/1.88) * this.earthYearsToLive)} Mars years to live.`;
     } else {
@@ -71,6 +81,7 @@ export default class SuperGalacticAgeCalculator {
   jupiter() {
     const earthYearsConverted = (1/11.86) * this.earthYears;
     let lifeExpectancy = "";
+
     if (Object.hasOwn(this, "earthYearsToLive")) {
       lifeExpectancy = `You have ${Math.round((1/11.86) * this.earthYearsToLive)} Jupiter years to live.`;
     } else {
