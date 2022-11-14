@@ -6,10 +6,10 @@ export default class SuperGalacticAgeCalculator {
   earthLifeExpectancy() {
     if (this.earthYears <= 73) {
       const lifeExpectancy = 73 - this.earthYears;
-      this.earthYearsToLive = `You have ${lifeExpectancy} Earth years to live.`;
+      this.earthYearsToLive = lifeExpectancy;
     } else {
       const lifeExpectancyOver = this.earthYears - 73;
-      this.earthYearsPastYearsToLive = `You have lived ${lifeExpectancyOver} year over Earths avg life expectancy.`;
+      this.earthYearsPastYearsToLive = lifeExpectancyOver;
     }
   } 
 
