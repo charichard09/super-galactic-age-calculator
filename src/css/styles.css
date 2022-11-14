@@ -1,5 +1,9 @@
 body {
-  background-color: lightblue;
+  background-image: url("../images/milky-way.jpg");
+  background-size: 100% auto;
+  background-repeat: repeat;
+  background-color: transparent;
+  color:#B68464;
 }
 
 .hidden {
