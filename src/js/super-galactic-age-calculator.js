@@ -14,17 +14,17 @@ export default class SuperGalacticAgeCalculator {
   } 
 
   earthAge() {
-
+    return `You are ${this.earthYears} in Earth years.`;
   }
-  
-  earthlifeExpectancy() {
+
+  earthLifeExpectancy() {
     let lifeExpectancy = "";
     if (Object.hasOwn(this, "earthYearsToLive")) {
       lifeExpectancy = `You have ${this.earthYearsToLive} Earth years to live.`;
     } else {
       lifeExpectancy = `You have lived ${this.earthYearsPastYearsToLive} years over Earths avg life expectancy.`;
     }
-    return `You are ${this.earthYears} in Earth years. ${lifeExpectancy}`;
+    return `${lifeExpectancy}`;
   }
 
   mercury() {
