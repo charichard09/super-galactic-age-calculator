@@ -55,4 +55,8 @@ export default class SuperGalacticAgeCalculator {
     }
     return `You are ${Math.round(earthYearsConverted)} in Mars years. ${lifeExpectancy}`;
   }
+
+  jupiter() {
+    
+  }
 }
