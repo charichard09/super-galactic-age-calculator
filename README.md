@@ -95,3 +95,5 @@ Prompt: "Write an application that determines a user's age based on a planet's s
   jupiterYearsToLive =
 }
 
+converting to Earth years:
+(1/planetYear) * ageInYears = Earth Years
