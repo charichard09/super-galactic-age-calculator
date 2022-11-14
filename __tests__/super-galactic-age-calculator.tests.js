@@ -7,7 +7,7 @@ describe('SuperGalacticAgeCalculator class', () => {
     expect(ageInput.earthYears).toEqual(31);
   });
 
-  test('2. It should create SuperGalacticAgeCalculator object with years to live 77 - 31', () => {
+  test('2. It should add earthYearsToLive to SuperGalacticAgeCalculator object', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
     expect(ageInput.earthYearsToLive).toEqual(46);
   });
