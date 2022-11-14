@@ -57,6 +57,6 @@ describe('SuperGalacticAgeCalculator class', () => {
   test('9. It should return venus years and if life expectancy less than age, how many venus years over', () => {
     let ageInput = new SuperGalacticAgeCalculator(74);
     ageInput.earthLifeExpectancy();
-    expect(ageInput.mercury()).toEqual("You are 50 in Mercury years. You have lived 4 years over Mercurys avg life expectancy.");
+    expect(ageInput.venus()).toEqual("You are 119 in Venus years. You have lived 2 years over Venuss avg life expectancy.");
   });
 });
