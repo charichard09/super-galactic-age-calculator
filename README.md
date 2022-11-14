@@ -30,11 +30,11 @@ Venus, Mars, and Jupiter. It will also prompt the user if they would like to see
 * _Alternatively:_
 * _Install Node.js:_
 * [OS X and Windows Instructions](https://www.learnhowtoprogram.com/intermediate-javascript/getting-started-with-javascript/installing-node-js)
-* _Clone repo to a local directory_
+* _Clone this repo to a local directory_
 * _Using Terminal on OS X or PowerShell on Windows: navigate to the directory that this repo was cloned to and 
 install all packages with command $ npm install (without the $)_
 * _Build the project using webpack with command $ npm run build_
-* _Navigate to the "dist" folder and open index.html in Chrome Web Browser_
+* _Navigate to the "dist" folder that has now been created in the local repo of this project and open index.html in Chrome Web Browser_
 
 ## Known Bugs
 
