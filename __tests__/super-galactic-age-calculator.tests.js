@@ -44,7 +44,7 @@ describe('SuperGalacticAgeCalculator class', () => {
   test('7. It should return age in mercury years', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
     ageInput.lifeExpectancy();
-    expect(ageInput.mercuryAge()).toEqual("You are 129 in Mercury years");
+    expect(ageInput.mercuryAge()).toEqual("You are 129 in Mercury years.");
   });
 
   test('8. It should return how long in Mercury years left to live', () => {
@@ -60,16 +60,22 @@ describe('SuperGalacticAgeCalculator class', () => {
   });
 
   //venus()
-  test('8. It should return age in venus years and how long in venus years left to live', () => {
+  test('10. It should return age in venus years', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
     ageInput.lifeExpectancy();
-    expect(ageInput.venus()).toEqual("You are 50 in Venus years. You have 68 Venus years to live.");
+    expect(ageInput.venusAge()).toEqual("You are 50 in Venus years.");
   });
 
-  test('9. It should return venus years and if life expectancy less than age, how many venus years over', () => {
+  test('11. It should return how long in venus years left to live', () => {
+    let ageInput = new SuperGalacticAgeCalculator(31);
+    ageInput.lifeExpectancy();
+    expect(ageInput.venusLifeExpectancy()).toEqual("You have 68 Venus years to live.");
+  });
+
+  test('12. It should return if life expectancy less than age, how many venus years over', () => {
     let ageInput = new SuperGalacticAgeCalculator(74);
     ageInput.lifeExpectancy();
-    expect(ageInput.venus()).toEqual("You are 119 in Venus years. You have lived 2 years over Venus' avg life expectancy.");
+    expect(ageInput.venusLifeExpectancy()).toEqual("You have lived 2 years over Venus' avg life expectancy.");
   });
 
   //mars()
