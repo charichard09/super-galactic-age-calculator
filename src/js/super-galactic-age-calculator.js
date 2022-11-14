@@ -50,6 +50,8 @@ export default class SuperGalacticAgeCalculator {
     let lifeExpectancy = "";
     if (Object.hasOwn(this, "earthYearsToLive")) {
       lifeExpectancy = `You have ${Math.round((1/1.88) * this.earthYearsToLive)} Mars years to live.`;
+    } else {
+      lifeExpectancy = `You have lived ${Math.round((1/1.88) * this.earthYearsPastYearsToLive)} years over Mars' avg life expectancy.`;
     }
     return `You are ${Math.round(earthYearsConverted)} in Mars years. ${lifeExpectancy}`;
   }
