@@ -18,7 +18,7 @@ export default class SuperGalacticAgeCalculator {
     if (Object.hasOwn(this, "earthYearsToLive")) {
       lifeExpectancy = `You have ${this.earthYearsToLive} Earth years to live.`;
     } else {
-      lifeExpectancy = `You have lived ${this.earthYearsPastYearsToLive} year over Earths avg life expectancy.`;
+      lifeExpectancy = `You have lived ${this.earthYearsPastYearsToLive} years over Earths avg life expectancy.`;
     }
     return `You are ${this.earthYears} in Earth years. ${lifeExpectancy}`;
   }
