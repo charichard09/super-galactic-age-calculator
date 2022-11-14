@@ -66,4 +66,11 @@ describe('SuperGalacticAgeCalculator class', () => {
     ageInput.earthLifeExpectancy();
     expect(ageInput.mars()).toEqual("You are 16 in Mars years. You have 22 Mars years to live.");
   });
+
+  test('11. It should return mars years and if life expectancy less than age, how many mars years over', () => {
+    let ageInput = new SuperGalacticAgeCalculator(74);
+    ageInput.earthLifeExpectancy();
+    expect(ageInput.mars()).toEqual("You are 39 in Mars years. You have lived 1 years over Mars' avg life expectancy.");
+  });
 });
+
