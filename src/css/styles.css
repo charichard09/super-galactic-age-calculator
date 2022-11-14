@@ -9,3 +9,7 @@ body {
 .hidden {
   display: none;
 }
+
+#age-div {
+  margin-bottom: 10%;
+}
