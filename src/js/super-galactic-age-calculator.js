@@ -64,6 +64,7 @@ export default class SuperGalacticAgeCalculator {
 
   marsAge() {
     const earthYearsConverted = (1/1.88) * this.earthYears;
+    
     return `You are ${Math.round(earthYearsConverted)} in Mars years.`;
   }
 
@@ -80,6 +81,7 @@ export default class SuperGalacticAgeCalculator {
 
   jupiterAge() {
     const earthYearsConverted = (1/11.86) * this.earthYears;
+
     return `You are ${Math.round(earthYearsConverted)} in Jupiter years.`;
   }
 

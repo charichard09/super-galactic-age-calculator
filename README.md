@@ -76,28 +76,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Copyright (c) _date_ _author name(s)_
-
-
-Prompt: "Write an application that determines a user's age based on a planet's solar years. (1 solar year on Earth is 365 days, on Mercury is 88 days"
-
-- take ageInYears, pass in as argument to class SuperGalacticAgeCalculator(ageInYearsParam)
-
-- class SuperGalacticAgeCalculator(ageInYearsParam) {
-  earthYears = ageInYearsParam;
-  earthYearsToLive = math;
-  
-  // methods?
-  mercuryYears = ageInYearsParam to .24 Earth Years;
-  mercuryYearsToLive = (life expectancy left for age, convert to planet years. IF life expectancy > current age, return 
-    number of years past life expetency);
-  venusYears = ageInYearsParam to .62 Earth Years;
-  venusYearsToLive = math;
-  marsYears = ageInYearsParam to 1.88 Earth Years;
-  marsYearsToLive = math;
-  jupiterYears = ageInYearsParam to 11.86 Earth Years;
-  jupiterYearsToLive =
-}
-
-converting to Earth years:
-(1/planetYear) * ageInYears = Earth Years
+Copyright (c) _11-14-22_ _Richard Cha_
