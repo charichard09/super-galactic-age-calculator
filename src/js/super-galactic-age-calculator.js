@@ -39,7 +39,9 @@ export default class SuperGalacticAgeCalculator {
     let lifeExpectancy = "";
     if (Object.hasOwn(this, "earthYearsToLive")) {
       lifeExpectancy = `You have ${Math.round((1/.62) * this.earthYearsToLive)} Venus years to live.`;
-    } 
+    } else {
+      lifeExpectancy = `You have lived ${Math.round((1/.62) * this.earthYearsPastYearsToLive)} years over Venus' avg life expectancy.`;
+    }
     return `You are ${Math.round(earthYearsConverted)} in Venus years. ${lifeExpectancy}`;
   }
 }
