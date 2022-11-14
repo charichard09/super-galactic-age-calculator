@@ -12,4 +12,8 @@ export default class SuperGalacticAgeCalculator {
       this.earthYearsPastYearsToLive = `You have lived ${lifeExpectancyOver} year over Earths avg life expectancy.`;
     }
   } 
+
+  mercury() {
+    
+  }
 }
