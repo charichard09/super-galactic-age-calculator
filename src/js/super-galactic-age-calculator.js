@@ -44,4 +44,8 @@ export default class SuperGalacticAgeCalculator {
     }
     return `You are ${Math.round(earthYearsConverted)} in Venus years. ${lifeExpectancy}`;
   }
+
+  mars() {
+    
+  }
 }

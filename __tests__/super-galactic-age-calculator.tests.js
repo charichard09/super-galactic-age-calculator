@@ -59,4 +59,11 @@ describe('SuperGalacticAgeCalculator class', () => {
     ageInput.earthLifeExpectancy();
     expect(ageInput.venus()).toEqual("You are 119 in Venus years. You have lived 2 years over Venus' avg life expectancy.");
   });
+
+  //mars()
+  test('10. It should return age in mars years and how long in mars years left to live', () => {
+    let ageInput = new SuperGalacticAgeCalculator(31);
+    ageInput.earthLifeExpectancy();
+    expect(ageInput.mars()).toEqual("You are 16 in mars years. You have 22 mars years to live.");
+  });
 });
