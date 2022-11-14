@@ -42,7 +42,7 @@ describe('SuperGalacticAgeCalculator class', () => {
   });
 
   test('7. It should return mercury years and if life expectancy less than age, how many Mercury years over', () => {
-    let ageInput = new SuperGalacticAgeCalculator(31);
+    let ageInput = new SuperGalacticAgeCalculator(74);
     ageInput.earthLifeExpectancy();
     expect(ageInput.mercury()).toEqual("You are 308 in Mercury years. You have lived 4 years over Mercurys avg life expectancy.");
   });
