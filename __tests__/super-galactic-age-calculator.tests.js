@@ -13,9 +13,9 @@ describe('SuperGalacticAgeCalculator class', () => {
     expect(ageInput.earthYearsToLive).toEqual("You have 42 Earth years to live.");
   });
 
-  test('2. It should check if over life expectancy add earthYearsPastYearsToLive', () => {
+  test('3. It should check if over life expectancy add earthYearsPastYearsToLive', () => {
     let ageInput = new SuperGalacticAgeCalculator(78);
     ageInput.earthLifeExpectancy();
-    expect(ageInput.earthYearsToLive).toEqual("You have lived 1 year over Earths avg life expectancy.");
+    expect(ageInput.earthYearsPastYearsToLive).toEqual("You have lived 1 year over Earths avg life expectancy.");
   });
 });
