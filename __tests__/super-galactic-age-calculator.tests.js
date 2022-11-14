@@ -51,6 +51,12 @@ describe('SuperGalacticAgeCalculator class', () => {
   test('8. It should return age in venus years and how long in venus years left to live', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
     ageInput.earthLifeExpectancy();
-    expect(ageInput.venus()).toEqual("You are 50 in Venus years. You have 67 Venus years to live.");
+    expect(ageInput.venus()).toEqual("You are 50 in Venus years. You have 68 Venus years to live.");
+  });
+
+  test('9. It should return venus years and if life expectancy less than age, how many venus years over', () => {
+    let ageInput = new SuperGalacticAgeCalculator(74);
+    ageInput.earthLifeExpectancy();
+    expect(ageInput.mercury()).toEqual("You are 50 in Mercury years. You have lived 4 years over Mercurys avg life expectancy.");
   });
 });

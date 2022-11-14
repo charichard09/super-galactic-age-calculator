@@ -27,19 +27,19 @@ export default class SuperGalacticAgeCalculator {
     const earthYearsConverted = (1/.24) * this.earthYears;
     let lifeExpectancy = "";
     if (Object.hasOwn(this, "earthYearsToLive")) {
-      lifeExpectancy = `You have ${parseInt((1/.24) * this.earthYearsToLive)} Mercury years to live.`;
+      lifeExpectancy = `You have ${Math.round((1/.24) * this.earthYearsToLive)} Mercury years to live.`;
     } else {
-      lifeExpectancy = `You have lived ${parseInt((1/.24) * this.earthYearsPastYearsToLive)} years over Mercurys avg life expectancy.`;
+      lifeExpectancy = `You have lived ${Math.round((1/.24) * this.earthYearsPastYearsToLive)} years over Mercurys avg life expectancy.`;
     }
-    return `You are ${parseInt(earthYearsConverted)} in Mercury years. ${lifeExpectancy}`;
+    return `You are ${Math.round(earthYearsConverted)} in Mercury years. ${lifeExpectancy}`;
   }
 
   venus() {
     const earthYearsConverted = (1/.62) * this.earthYears;
     let lifeExpectancy = "";
     if (Object.hasOwn(this, "earthYearsToLive")) {
-      lifeExpectancy = `You have ${parseInt((1/.62) * this.earthYearsToLive)} Venus years to live.`;
+      lifeExpectancy = `You have ${Math.round((1/.62) * this.earthYearsToLive)} Venus years to live.`;
     } 
-    return `You are ${parseInt(earthYearsConverted)} in Venus years. ${lifeExpectancy}`;
+    return `You are ${Math.round(earthYearsConverted)} in Venus years. ${lifeExpectancy}`;
   }
 }
