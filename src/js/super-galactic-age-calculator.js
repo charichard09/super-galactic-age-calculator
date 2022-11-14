@@ -61,6 +61,8 @@ export default class SuperGalacticAgeCalculator {
     let lifeExpectancy = "";
     if (Object.hasOwn(this, "earthYearsToLive")) {
       lifeExpectancy = `You have ${Math.round((1/11.86) * this.earthYearsToLive)} Jupiter years to live.`;
+    } else {
+      lifeExpectancy = `You have lived ${Math.round((1/11.86) * this.earthYearsPastYearsToLive)} years over Jupiters avg life expectancy.`;
     }
     return `You are ${Math.round(earthYearsConverted)} in Jupiter years. ${lifeExpectancy}`;
   }

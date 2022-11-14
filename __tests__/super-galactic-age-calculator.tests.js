@@ -79,5 +79,11 @@ describe('SuperGalacticAgeCalculator class', () => {
     ageInput.earthLifeExpectancy();
     expect(ageInput.jupiter()).toEqual("You are 3 in Jupiter years. You have 4 Jupiter years to live.");
   });
+
+  test('13. It should return jupiter years and if life expectancy less than age, how many jupiter years over', () => {
+    let ageInput = new SuperGalacticAgeCalculator(74);
+    ageInput.earthLifeExpectancy();
+    expect(ageInput.jupiter()).toEqual("You are 6 in Jupiter years. You have lived 0 years over Jupiters avg life expectancy.");
+  });
 });
 
