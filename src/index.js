@@ -6,8 +6,8 @@ import SuperGalacticAgeCalculator from './js/super-galactic-age-calculator.js';
 //UI Logic
 function handleSubmissionForm(event) {
   event.preventDefault();
-  document.querySelector('#age').innerText = null;
-  document.getElementById("yes-div").removeAttribute("class");
+  reset();
+
   const ageInput = parseInt(document.querySelector('#age').value);
 
   const solarAge = new SuperGalacticAgeCalculator(ageInput);
@@ -16,6 +16,16 @@ function handleSubmissionForm(event) {
   addEarthInfo(solarAge);
   addMercuryInfo(solarAge);
   addVenusInfo(solarAge);
+  addMarsInfo(solarAge);
+  addJupiterInfo(solarAge);
+}
+
+function reset() {
+  document.querySelector('#age').innerText = null;
+  document.getElementById("yes-div").removeAttribute("class");
+  for (const li of Array.from(document.querySelectorAll("li"))) {
+    li.remove();
+  }
 }
 
 function handleYesButton() {
@@ -23,6 +33,26 @@ function handleYesButton() {
   for (const p of Array.from(document.querySelectorAll("p"))) {
     p.removeAttribute("class");
   }
+}
+
+function addJupiterInfo(solarAgeObj) {
+  let jupiterLi = document.createElement("li");
+  let jupiterP = document.createElement("p");
+  jupiterLi.append(solarAgeObj.jupiterAge());
+  jupiterP.append(solarAgeObj.jupiterLifeExpectancy());
+  jupiterP.setAttribute("class", "hidden");
+  jupiterLi.append(jupiterP);
+  document.getElementById("jupiter-response").append(jupiterLi);
+}
+
+function addMarsInfo(solarAgeObj) {
+  let marsLi = document.createElement("li");
+  let marsP = document.createElement("p");
+  marsLi.append(solarAgeObj.marsAge());
+  marsP.append(solarAgeObj.marsLifeExpectancy());
+  marsP.setAttribute("class", "hidden");
+  marsLi.append(marsP);
+  document.getElementById("mars-response").append(marsLi);
 }
 
 function addVenusInfo(solarAgeObj) {
