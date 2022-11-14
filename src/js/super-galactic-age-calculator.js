@@ -14,6 +14,7 @@ export default class SuperGalacticAgeCalculator {
   } 
 
   mercury() {
-    
+    const earthYearsConverted = (1/.24) * this.earthYears;
+    return parseInt(earthYearsConverted);
   }
 }
