@@ -3,7 +3,7 @@ export default class SuperGalacticAgeCalculator {
     this.earthYears = age;
   }
 
-  earthLifeExpectancy() {
+  lifeExpectancy() {
     if (this.earthYears <= 73) {
       const lifeExpectancy = 73 - this.earthYears;
       this.earthYearsToLive = lifeExpectancy;
@@ -13,7 +13,11 @@ export default class SuperGalacticAgeCalculator {
     }
   } 
 
-  earth() {
+  earthAge() {
+
+  }
+  
+  earthlifeExpectancy() {
     let lifeExpectancy = "";
     if (Object.hasOwn(this, "earthYearsToLive")) {
       lifeExpectancy = `You have ${this.earthYearsToLive} Earth years to live.`;
