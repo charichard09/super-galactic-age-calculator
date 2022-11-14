@@ -33,4 +33,8 @@ export default class SuperGalacticAgeCalculator {
     }
     return `You are ${parseInt(earthYearsConverted)} in Mercury years. ${lifeExpectancy}`;
   }
+
+  venus() {
+    
+  }
 }
