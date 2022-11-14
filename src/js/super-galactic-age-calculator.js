@@ -13,6 +13,10 @@ export default class SuperGalacticAgeCalculator {
     }
   } 
 
+  earth() {
+
+  }
+  
   mercury() {
     const earthYearsConverted = (1/.24) * this.earthYears;
     return `Your age on Mercury is ${parseInt(earthYearsConverted)} years old`;
