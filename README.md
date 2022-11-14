@@ -22,27 +22,19 @@ Venus, Mars, and Jupiter. It will also prompt the user if they would like to see
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
 * _Go to link:_
 * [Super Galactic Age Calculator](https://charichard09.github.io/super-galactic-age-calculator)
 * _Input your age and click submit_
 * _Under "See average life expectency on each planet", select "Yes"_
 
 * _Alternatively:_
+* _Install Node.js:_
+* [OS X and Windows Instructions](https://www.learnhowtoprogram.com/intermediate-javascript/getting-started-with-javascript/installing-node-js)
 * _Clone repo to a local directory_
-download node?
-* _Installing all packages with $ npm install._
-* _Building the project using webpack with $ npm run build_
-* _Starting a development server with $ npm run start_
-* _Linting JS files in the src folder with $ npm run lint_
-* _Running tests with Jest using $ npm run test_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+* _Using Terminal on OS X or PowerShell on Windows: navigate to the directory that this repo was cloned to and 
+install all packages with command $ npm install (without the $)_
+* _Build the project using webpack with command $ npm run build_
+* _Navigate to the "dist" folder and open index.html in Chrome Web Browser_
 
 ## Known Bugs
 
