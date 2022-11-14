@@ -63,11 +63,11 @@ export default class SuperGalacticAgeCalculator {
   }
 
   marsAge() {
-
+    const earthYearsConverted = (1/1.88) * this.earthYears;
+    return `You are ${Math.round(earthYearsConverted)} in Mars years.`;
   }
 
   marsLifeExpectancy() {
-    const earthYearsConverted = (1/1.88) * this.earthYears;
     let lifeExpectancy = "";
 
     if (Object.hasOwn(this, "earthYearsToLive")) {
@@ -75,10 +75,14 @@ export default class SuperGalacticAgeCalculator {
     } else {
       lifeExpectancy = `You have lived ${Math.round((1/1.88) * this.earthYearsPastYearsToLive)} years over Mars' avg life expectancy.`;
     }
-    return `You are ${Math.round(earthYearsConverted)} in Mars years. ${lifeExpectancy}`;
+    return `${lifeExpectancy}`;
   }
 
-  jupiter() {
+  jupiterAge() {
+
+  }
+
+  jupiterLifeExpectancy() {
     const earthYearsConverted = (1/11.86) * this.earthYears;
     let lifeExpectancy = "";
 

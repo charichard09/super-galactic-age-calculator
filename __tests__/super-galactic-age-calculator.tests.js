@@ -98,16 +98,22 @@ describe('SuperGalacticAgeCalculator class', () => {
   });
 
   //jupiter()
-  test('12. It should return age in jupiter years and how long in jupiter years left to live', () => {
+  test('16. It should return age in jupiter years', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
     ageInput.lifeExpectancy();
-    expect(ageInput.jupiter()).toEqual("You are 3 in Jupiter years. You have 4 Jupiter years to live.");
+    expect(ageInput.jupiterAge()).toEqual("You are 3 in Jupiter years.");
   });
 
-  test('13. It should return jupiter years and if life expectancy less than age, how many jupiter years over', () => {
+  test('17. It should return how long in jupiter years left to live', () => {
+    let ageInput = new SuperGalacticAgeCalculator(31);
+    ageInput.lifeExpectancy();
+    expect(ageInput.jupiterLifeExpectancy()).toEqual("You have 4 Jupiter years to live.");
+  });
+
+  test('18. It should return if life expectancy less than age, how many jupiter years over', () => {
     let ageInput = new SuperGalacticAgeCalculator(74);
     ageInput.lifeExpectancy();
-    expect(ageInput.jupiter()).toEqual("You are 6 in Jupiter years. You have lived 0 years over Jupiters avg life expectancy.");
+    expect(ageInput.jupiterLifeExpectancy()).toEqual("You have lived 0 years over Jupiters avg life expectancy.");
   });
 });
 
