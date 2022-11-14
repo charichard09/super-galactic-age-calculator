@@ -4,7 +4,7 @@ export default class SuperGalacticAgeCalculator {
   }
 
   earthLifeExpectancy() {
-    const lifeExpectancy = 77 - this.earthYears;
+    const lifeExpectancy = 73 - this.earthYears;
     this.earthYearsToLive = `You have ${lifeExpectancy} Earth years to live.`;
   } 
 }
