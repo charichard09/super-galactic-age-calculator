@@ -51,6 +51,6 @@ describe('SuperGalacticAgeCalculator class', () => {
   test('8. It should return age in venus years and how long in venus years left to live', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
     ageInput.earthLifeExpectancy();
-    expect(ageInput.venus()).toEqual("You are 49 in Venus years. You have 67 Venus years to live.");
+    expect(ageInput.venus()).toEqual("You are 50 in Venus years. You have 67 Venus years to live.");
   });
 });
