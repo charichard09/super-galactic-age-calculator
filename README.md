@@ -1,15 +1,10 @@
-# _{Application Name}_
+# _Super Galactic Age Calculator_
 
-#### By _**{List of contributors}**_
+#### By _**Richard Cha**_
 
-#### _{Brief description of application}_
+#### _Application that determines a user's age based on a planet's solar years._
 
 ## Technologies Used
-
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
 
 * _JavaScript_
 * _HTML_
@@ -22,7 +17,8 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This application will ask a user for their age in years, and display their age in solar years on the planets Earth, Mercury, 
+Venus, Mars, and Jupiter. It will also prompt the user if they would like to see their average life expectency on each planet._
 
 ## Setup/Installation Requirements
 
@@ -33,8 +29,9 @@ _{This is a detailed description of your application. Give as much detail as nee
 * _format_
 
 * _Go to link:_
-* [name](https://charichard09.github.io/name)
-* _{Give input to get output} i.e. Select your toppings and hit Add Pizza to get a total_
+* [Super Galactic Age Calculator](https://charichard09.github.io/super-galactic-age-calculator)
+* _Input your age and click submit_
+* _Under "See average life expectency on each planet", select "Yes"_
 
 * _Alternatively:_
 * _Clone repo to a local directory_
@@ -49,8 +46,8 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _None_
+
 
 ## License
 
