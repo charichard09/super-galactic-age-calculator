@@ -14,7 +14,7 @@ export default class SuperGalacticAgeCalculator {
   } 
 
   earth() {
-    return this.earthYears;
+    return `You are ${this.earthYears} in Earth years. You have ${this.earthYearsToLive} Earth years to live.`;
   }
 
   mercury() {
