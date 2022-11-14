@@ -24,6 +24,6 @@ describe('SuperGalacticAgeCalculator class', () => {
   //mercury()
   test('4. It should return age in mercury years from earth years ', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
-    expect(ageInput.mercury()).toEqual(129);
+    expect(ageInput.mercury()).toEqual("Your age on Mercury is 129 years old");
   });
 });
