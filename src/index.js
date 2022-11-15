@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import SuperGalacticAgeCalculator from './js/super-galactic-age-calculator.js';
 
-//UI Logic
+
 function handleSubmissionForm(event) {
   event.preventDefault();
   reset();

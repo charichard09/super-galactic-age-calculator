@@ -2,13 +2,11 @@ import SuperGalacticAgeCalculator from "./../src/js/super-galactic-age-calculato
 
 describe('SuperGalacticAgeCalculator class', () => {
   
-  //constructor
   test('1. It should create SuperGalacticAgeCalculator object with Earth years 31', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
     expect(ageInput.earthYears).toEqual(31);
   });
 
-  //earthLifeExpectancy()
   test('2. It should add earthYearsToLive to SuperGalacticAgeCalculator', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
     ageInput.lifeExpectancy();
@@ -21,7 +19,6 @@ describe('SuperGalacticAgeCalculator class', () => {
     expect(ageInput.earthYearsPastYearsToLive).toEqual(1);
   });
 
-  //earth()
   test('4. It should return earth years', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
     ageInput.lifeExpectancy();
@@ -40,7 +37,6 @@ describe('SuperGalacticAgeCalculator class', () => {
     expect(ageInput.earthLifeExpectancy()).toEqual("You have lived 1 years over Earths avg life expectancy.");
   });
 
-  //mercury()
   test('7. It should return age in mercury years', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
     ageInput.lifeExpectancy();
@@ -59,7 +55,6 @@ describe('SuperGalacticAgeCalculator class', () => {
     expect(ageInput.mercuryLifeExpectancy()).toEqual("You have lived 4 years over Mercurys avg life expectancy.");
   });
 
-  //venus()
   test('10. It should return age in venus years', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
     ageInput.lifeExpectancy();
@@ -78,7 +73,6 @@ describe('SuperGalacticAgeCalculator class', () => {
     expect(ageInput.venusLifeExpectancy()).toEqual("You have lived 2 years over Venus' avg life expectancy.");
   });
 
-  //mars()
   test('13. It should return age in mars years', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
     ageInput.lifeExpectancy();
@@ -97,7 +91,6 @@ describe('SuperGalacticAgeCalculator class', () => {
     expect(ageInput.marsLifeExpectancy()).toEqual("You have lived 1 years over Mars' avg life expectancy.");
   });
 
-  //jupiter()
   test('16. It should return age in jupiter years', () => {
     let ageInput = new SuperGalacticAgeCalculator(31);
     ageInput.lifeExpectancy();
