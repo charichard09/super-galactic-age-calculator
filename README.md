@@ -38,7 +38,7 @@ install all packages with command $ npm install (without the $)_
 
 ## Known Bugs
 
-* _None_
+* _No error handling for 0 input or negative years_
 
 
 ## License
