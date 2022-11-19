@@ -33,8 +33,8 @@ Venus, Mars, and Jupiter. It will also prompt the user if they would like to see
 * _Clone this repo to a local directory_
 * _Using Terminal on OS X or PowerShell on Windows: navigate to the directory that this repo was cloned to and 
 install all packages with command $ npm install (without the $)_
-* _Run command $npm run lint and confirm all files in the src folder have 0 errors_
-* _Run command $npm run test to confirm all business logic tests pass with Jest_
+* _Confirm all files in the src folder have 0 errors by running command $ npm run lint_
+* _Confirm all business logic tests pass with Jest by running command "$ npm run test"_
 * _Build the project using webpack with command $ npm run build_
 * _Navigate to the "dist" folder that has now been created in the local repo of this project and open index.html in Chrome Web Browser_
 
